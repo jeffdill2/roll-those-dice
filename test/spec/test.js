@@ -13,7 +13,6 @@
     });
 })();
 
-//jeffs example
 (function () {
     'use strict';
 
@@ -26,3 +25,11 @@
         });
     });
 })();
+
+// example
+
+
+  // We shall contemplate truth by testing reality, via spec expectations.
+  it("should expect true", function() {
+    expect(true).toBeTruthy(); //This should be true
+  });
