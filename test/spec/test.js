@@ -3,12 +3,19 @@
 (function () {
     'use strict';
 
-    describe('Give it some context', function () {
-        describe('maybe a bit more context here', function () {
-            it('should run here few assertions', function () {
-              var answer = 2;
-              expect(2).to.equal(answer);
-            });
-        });
-    });
+ 	describe('Number of dice', function() {
+ 		it('should have between one and five die', function() {
+ 		expect(dieHolder.length).to.be.within(1, 5)
+ 		});
+ 	});
+
+ 	describe('Roll Button', function() {
+ 		it('should excecute roll function', function() {
+ 			dieHolder.forEach( function(die) {
+ 				expect(die.roll).to.be.a("number")
+ 			});
+ 		});
+ 	});
+
 })();
+
