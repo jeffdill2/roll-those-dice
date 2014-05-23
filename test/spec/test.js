@@ -1,14 +1,37 @@
-/* global describe, it */
-
 (function () {
-    'use strict';
+	'use strict';
 
-    describe('Give it some context', function () {
-        describe('maybe a bit more context here', function () {
-            it('should run here few assertions', function () {
-              var answer = 2;
-              expect(2).to.equal(answer);
-            });
-        });
-    });
+	describe('Dice Constructor', function() {
+		var dice = new Dice(6,5);
+
+		describe('Sides of Dice', function() {
+			it('should have number of sides specified as first parameter', function() {
+				
+
+				expect(dice.sides).to.be.equal(6);
+			});
+
+			it('should have between 6 and 20 sides', function() {
+				expect(dice.sides).to.be.within(6,20);
+			});
+		});
+
+		describe('Interval to Count By', function() {
+			it('should have countBy number specified as second parameter', function() {
+				expect(dice.countBy).to.be.equal(5);
+			});
+
+			it('should have a countBy value no greater than 100', function() {
+				expect(dice.countBy).to.be.at.most(100);
+			});
+		});
+
+		describe('Verify Dice Rolls', function() {
+			it('should return a value within the range of sides times countBy', function() {
+				for (var i = 1; i <= 1000; i += 1){
+					expect(dice.roll()).to.be.within(5,50);
+				}
+			});
+		});
+	});
 })();

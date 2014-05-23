@@ -12,6 +12,14 @@
     <!--////////////////////////////////
     /////////ADDITIONAL HTML CAN GO HERE
     /////////////////////////////////-->
+    <select id="diceNumber">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
+
 
     <script src="bower_components/mocha/mocha.js"></script>
     <script>mocha.setup('bdd')</script>
@@ -25,6 +33,7 @@
     <!-- include source files here... -->
 
     <!-- include spec files here... -->
+    <script src="scripts/main.js"></script>
     <script src="spec/test.js"></script>
 
     <script>window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run()</script>
