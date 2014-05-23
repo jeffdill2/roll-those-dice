@@ -2,11 +2,10 @@
 
 	describe('Dice Constructor', function() {
 		var dice = new Dice(6,5);
+		dieHolder.push(dice);
 
 		describe('Sides of Dice', function() {
 			it('should have number of sides specified as first parameter', function() {
-				
-
 				expect(dice.sides).to.be.equal(6);
 			});
 
@@ -33,8 +32,8 @@
 
 	 	describe('Roll Button', function() {
 	 		it('should excecute roll function', function() {
-	 			dieHolder.forEach( function(die) {
-	 				expect(die.roll).to.be.a("number")
+	 			dieHolder.forEach(function(die) {
+	 				expect(die.roll()).to.be.a("number")
 	 			});
 	 		});
 	 	});

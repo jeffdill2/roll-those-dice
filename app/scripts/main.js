@@ -6,3 +6,5 @@ function Dice(sides, countBy) {
 		return Math.floor(Math.random() * this.sides + 1 ) * this.countBy;
 	};
 }
+
+var dieHolder = [];
