@@ -2,3 +2,115 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+body {
+	margin: 0 0;
+	background-color: #5fa14e;
+	font-family: 'Bitter', serif;
+}
+
+h1 {
+	font-family: 'Bitter', serif;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	color: #fcfcfc;
+	text-shadow: 0px -1px 0px #477b3a;
+}
+
+p {
+	color: #fcfcfc;
+	text-shadow: 0px -1px 0px #477b3a;
+	letter-spacing: 1px;
+}
+
+.container {
+	width: 80%;
+	padding: 60px;
+}
+
+.center {
+	text-align: center;	
+}
+
+.left-column {
+	width: 10%;
+	float: left;
+}
+
+.right-column {
+	width: 10%;
+	float: right;
+}
+
+.dice-container {
+	height: 250px;
+}
+
+.roll {
+	margin: 0 auto;
+}
+	
+.button {
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: inset 0px -3px 0px 0px #477b3a;
+	background-color: #fcfcfc;
+	font-family: 'Bitter', serif;
+	font-weight: bolder;
+	color: #5fa14e;
+	font-size: 1.5em;
+	line-height: 3.5;
+	font-style: italic;
+	text-shadow: 0px -1px 0px #477b3a;
+
+	&:hover {
+		margin-top: 2px;
+		box-shadow: inset 0px -3px 0px 0px #477b3a;
+	}
+
+	&:active {
+		margin-top: 4px;
+		box-shadow: inset 0px 3px 0px 0px #477b3a;
+	}
+}
+
+.dice-displayed {
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 20px;
+	border-top: 1px solid #477b3a;
+
+	select {
+		width: 50px;
+		border-radius: 4px;
+		border: 1px solid #477b3a;
+		box-shadow: inset 0px -1px 0px 0px #ccc;
+		color: #aaa;
+
+		option {
+		}
+	}
+}
+
+.sides-option {
+	margin: 0 auto;
+	text-align: center;	
+
+	form {
+		margin-right: 50px;
+		display: inline-block;
+	}
+
+	input {
+		width: 80px;
+		padding-left: 5px;
+		border-radius: 4px;
+		border: 1px solid #477b3a;
+		box-shadow: inset 0px -1px 0px 0px #ccc;
+		font-size: 1em;
+		font-style: italic;
+		color: #aaa;
+	}
+}
