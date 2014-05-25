@@ -1,4 +1,4 @@
-<!doctype html>
+    <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -20,6 +20,8 @@
         <!-- endbuild -->
         <script src="bower_components/modernizr/modernizr.js"></script>
 
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
+
         <title>The Clarke-Dill Dice Rollymajig</title>
 
     </head>
@@ -31,10 +33,53 @@
         <!--////////////////////////////////////////////////////////
         ////////////////////////////// USER CREATED HTML STARTS HERE
         /////////////////////////////////////////////////////////-->
-        <h1>
-            Hello!
-        </h1>
+        <div class="container">  
+            <div class="left-column"></div>  
+                <h1 class="center">
+                    Feeling Lucky?
+                </h1>
 
+                <div class="dice-container">
+                    <!-- Where dice or text for dice number will be displayed -->
+                </div>
+
+                <div class="roll button">
+                    Roll!
+                </div>
+
+                <div class="dice-displayed">
+                    <p>Select number of dice to be displayed</p>
+                        <select>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                </div>
+
+                <div class="sides-option">
+                    <p>Enter a number between 6-20</p>
+                    <form>
+                        <input type="text" name="dice-sides" placeholder="Dice 1">
+                    </form>
+                     <form>
+                        <input type="text" name="dice-sides" placeholder="Dice 2">
+                    </form>
+                     <form>
+                        <input type="text" name="dice-sides" placeholder="Dice 3">
+                    </form>
+                     <form>
+                        <input type="text" name="dice-sides" placeholder="Dice 4">
+                    </form>
+                     <form>
+                        <input type="text" name="dice-sides" placeholder="Dice 1">
+                    </form>
+
+                </div>
+
+            <div class="right-column"></div>
+        </div>
         <!--////////////////////////////////////////////////////////
         //////////////////////////////// USER CREATED HTML ENDS HERE
         /////////////////////////////////////////////////////////-->
