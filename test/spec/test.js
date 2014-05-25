@@ -2,7 +2,7 @@
 
 	describe('Dice Constructor', function() {
 		var dice = new Dice(6,5);
-		dieHolder.push(dice);
+		aryDieHolder.push(dice);
 
 		describe('Sides of Dice', function() {
 			it('should have number of sides specified as first parameter', function() {
@@ -26,7 +26,7 @@
 
 	 	describe('Number of dice', function() {
 	 		it('should have between one and five die', function() {
-	 			expect(dieHolder.length).to.be.within(1, 5)
+	 			expect(aryDieHolder.length).to.be.within(1, 5)
 	 		});
 	 	});
 
