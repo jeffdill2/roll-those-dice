@@ -1,12 +1,24 @@
-    <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+
+<!--[if IE 7]>
+    <html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+
+<!--[if IE 8]>
+    <html class="no-js lt-ie9">
+<![endif]-->
+
+<!--[if gt IE 8]>
+    <html class="no-js">
+<![endif]-->
+
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>junkjunk</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -25,6 +37,7 @@
         <title>The Clarke-Dill Dice Rollymajig</title>
 
     </head>
+
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -35,51 +48,92 @@
         /////////////////////////////////////////////////////////-->
         <div class="container">  
             <div class="left-column"></div>  
-                <h1 class="center">
-                    Feeling Lucky?
-                </h1>
+            
+            <h1 class="center">
+                Feeling Lucky?
+            </h1>
 
-                <div class="dice-container">
-                    <!-- Where dice or text for dice number will be displayed -->
-                </div>
+            <div class="dice-container">
+                <div class="dice-roll" id="dice-roll-1"></div>
+                <div class="dice-roll" id="dice-roll-2"></div>
+                <div class="dice-roll" id="dice-roll-3"></div>
+                <div class="dice-roll" id="dice-roll-4"></div>
+                <div class="dice-roll" id="dice-roll-5"></div>
+            </div>
 
-                <div class="roll button">
+            <div class="button-container">
+                <div class="button" id="roll-button">
                     Roll!
                 </div>
 
-                <div class="dice-displayed">
-                    <p>Select number of dice to be displayed</p>
-                        <select>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
+                <div class="button" id="reset-button">
+                    Reset
                 </div>
+            </div>
 
-                <div class="sides-option">
-                    <p>Enter a number between 6-20</p>
-                    <form>
-                        <input type="text" name="dice-sides" placeholder="Dice 1">
-                    </form>
-                     <form>
-                        <input type="text" name="dice-sides" placeholder="Dice 2">
-                    </form>
-                     <form>
-                        <input type="text" name="dice-sides" placeholder="Dice 3">
-                    </form>
-                     <form>
-                        <input type="text" name="dice-sides" placeholder="Dice 4">
-                    </form>
-                     <form>
-                        <input type="text" name="dice-sides" placeholder="Dice 1">
-                    </form>
+            <div class="dice-displayed">
+                <p>Select number of dice to be displayed</p>
+                
+                <select id="dice-selector">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
 
-                </div>
+            <div class="sides-option">
+                <p>Enter a number between 6-20</p>
+                
+                <form>
+                    <input type="text" name="dice-sides" placeholder="Dice 1 Sides" id="dice-sides-1">
+                </form>
+
+                <form>
+                    <input type="text" name="dice-sides" placeholder="Dice 2 Sides" id="dice-sides-2">
+                </form>
+
+                <form>
+                    <input type="text" name="dice-sides" placeholder="Dice 3 Sides" id="dice-sides-3">
+                </form>
+
+                <form>
+                    <input type="text" name="dice-sides" placeholder="Dice 4 Sides" id="dice-sides-4">
+                </form>
+
+                <form>
+                    <input type="text" name="dice-sides" placeholder="Dice 5 Sides" id="dice-sides-5">
+                </form>
+            </div>
+
+            <div class="count-by-option">
+                <p>Enter a number between 1-100</p>
+                
+                <form>
+                    <input type="text" name="dice-count-by" placeholder="Dice 1 Count By" id="dice-countby-1">
+                </form>
+
+                <form>
+                    <input type="text" name="dice-count-by" placeholder="Dice 2 Count By" id="dice-countby-2">
+                </form>
+
+                <form>
+                    <input type="text" name="dice-count-by" placeholder="Dice 3 Count By" id="dice-countby-3">
+                </form>
+
+                <form>
+                    <input type="text" name="dice-count-by" placeholder="Dice 4 Count By" id="dice-countby-4">
+                </form>
+
+                <form>
+                    <input type="text" name="dice-count-by" placeholder="Dice 5 Count By" id="dice-countby-5">
+                </form>
+            </div>
 
             <div class="right-column"></div>
         </div>
+
         <!--////////////////////////////////////////////////////////
         //////////////////////////////// USER CREATED HTML ENDS HERE
         /////////////////////////////////////////////////////////-->
@@ -118,5 +172,5 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-</body>
+    </body>
 </html>

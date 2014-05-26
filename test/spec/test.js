@@ -32,7 +32,7 @@
 
 	 	describe('Roll Button', function() {
 	 		it('should excecute roll function', function() {
-	 			dieHolder.forEach(function(die) {
+	 			aryDieHolder.forEach(function(die) {
 	 				expect(die.roll()).to.be.a("number")
 	 			});
 	 		});
