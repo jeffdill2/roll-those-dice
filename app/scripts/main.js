@@ -19,6 +19,7 @@ var aryDieHolder = [];
 for (var i = 1; i <= 5; i += 1) {
 	$('#dice-sides-' + i.toString()).css('display', 'none');
 	$('#dice-countby-' + i.toString()).css('display', 'none');
+	$('#dice-roll-' + i.toString()).css('display', 'none');
 }
 
 $('#dice-selector').val('');
@@ -76,10 +77,12 @@ $('#dice-selector').change(function() {
 	for (var i = 1; i <= 5; i += 1) {
 		$('#dice-sides-' + i.toString()).css('display', 'none');
 		$('#dice-countby-' + i.toString()).css('display', 'none');
+		$('#dice-roll-' + i.toString()).css('display', 'none');
 	}
 
 	for (var i = 1; i <= numDiceCount; i += 1) {
 		$('#dice-sides-' + i.toString()).css('display', 'block');
 		$('#dice-countby-' + i.toString()).css('display', 'block');
+		$('#dice-roll-' + i.toString()).css('display', 'inline-block');
 	}
 });
